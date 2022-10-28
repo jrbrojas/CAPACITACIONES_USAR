@@ -333,15 +333,7 @@ export class AddPerfilesComponent implements OnInit {
     this.selectTipoEspecializacion = [
       {
         id: 1,
-        nombre: 'GIRED'
-      },
-      {
-        id: 2,
         nombre: 'USAR'
-      },
-      {
-        id: 3,
-        nombre: 'Combatientes del Fuego'
       }
     ];
 
@@ -364,7 +356,7 @@ export class AddPerfilesComponent implements OnInit {
       },
       {
         id: 5,
-        nombre: 'Cursos Forestales'
+        nombre: 'Cursos USAR'
       },
       {
         id: 4,
@@ -378,49 +370,38 @@ export class AddPerfilesComponent implements OnInit {
 
 
     this.selectCursos = [
-      { id: 1, nombre: 'Despachador de Ataque Inicial'},
-      { id: 2, nombre: 'Prevención y Educación de Incendios Forestales'},
-      { id: 3, nombre: 'Operaciones de Incendios Forestales y Protección de la Escena de Origen para Primeros Respondientes'},
-      { id: 4, nombre: 'Investigación de origen y causa de incendios forestales'},
-      { id: 5, nombre: 'Factores Humanos en la Línea de Fuego'},
-      { id: 6, nombre: 'De la Subordinación al Liderazgo'},
-      { id: 7, nombre: 'Instructor Facilitador Equivalencia CPI Curso de Formación de Instructores'},
-      { id: 8, nombre: 'Repaso del Combatiente de Incendios forestales'},
-      { id: 9, nombre: 'Curso Introductorio Combatiente de Incendios Forestales, Equivalencia Curso de Bombero Forestal.'},
-      { id: 10, nombre: 'Combatiente forestal'},
-      { id: 11, nombre: 'Combatiente de Incendios Forestales Tipo 1'},
-      { id: 12, nombre: 'Introducción al Comportamiento de Fuego'},
-      { id: 13, nombre: 'Comandante de Incidente de Ataque Inicial – CI Tipo 4'},
-      { id: 14, nombre: 'Motobombas Portátiles y Uso Efectivo de Agua'},
-      { id: 15, nombre: 'Motosierras en Incendios Forestales'},
-      { id: 16, nombre: 'Operaciones de Supresión en Incendios de Interfase Urbano Forestal'},
-      { id: 17, nombre: 'Miembro de Brigada Helitransportada'},
-      { id: 18, nombre: 'Operaciones de ignición'},
-      { id: 19, nombre: 'Jefe de Brigada-Recurso Singular'},
-      { id: 20, nombre: 'Equipo Pesado'},
-      { id: 21, nombre: 'Básico de Operaciones aéreas'},
-      { id: 22, nombre: 'Miembro de Brigada Helitransportada'},
-      { id: 23, nombre: 'Comandante de Incidentes de Ataque Ampliado'},
-      { id: 24, nombre: 'Supervisor de División'},
-      { id: 25, nombre: 'Manejador de Helibases'},
-      { id: 26, nombre: 'Introducción a los Cálculos de Comportamiento de Fuego'},
-      { id: 27, nombre: 'Jefe de la Sección de Operaciones'},
-      { id: 28, nombre: 'Jefe de la Sección de Planificación'},
-      { id: 29, nombre: 'Jefe de la Sección de logística'},
-      { id: 30, nombre: 'Introducción al Sistema de Comando de Incidentes Equivalencia SCI- Básico del Sistema de Comando de Incidentes'},
-      { id: 31, nombre: 'Sistema de Comando de Incidentes para Recurso Singulares y Acción de los Incidentes Equivalencia con SCI-Intermedio de Sistema de Comando de Incidentes'},
-      { id: 32, nombre: 'Sistema de Comando de Incidentes para Recurso Singulares y Acción de los Incidentes Equivalencia con SCI-Intermedio de Sistema de Comando de Incidentes'},
-      { id: 33, nombre: 'Intermedio del Sistema de Comando de Incidentes para incidentes en expansión'},
-      { id: 34, nombre: 'Avanzado para comando y personal general, incidentes complejos y MACS'},
-      { id: 35, nombre: 'Ejecutivo del Sistema de Comando de Incidentes'},
-      { id: 36, nombre: 'Implementación de Fuego Prescrito'},
-      { id: 37, nombre: 'Introducción a los Efectos del Fuego'},
-      { id: 38, nombre: 'Preparación de Plan de Fuego Prescrito'},
-      { id: 39, nombre: 'Técnicas de Manejo de Humo'},
-      { id: 40, nombre: 'Avanzado de Efectos de Fuego'},
-      { id: 41, nombre: 'Atención Prehospitalaria'},
-      { id: 42, nombre: 'Primera Respuesta a Incidentes con Materiales Peligrosos'},
-      { id: 43, nombre: 'Curso de Formación Ambiental'}
+      {
+        id: 1,
+        nombre: 'Curso Básico del Sistema de Comando de Incidentes',
+      },
+      {
+        id: 2,
+        nombre: 'Primera Respuesta a Incidentes con Materiales Peligrosos',
+      },
+      {
+        id: 3,
+        nombre: 'Rescate con Cuerdas',
+      },
+      {
+        id: 4,
+        nombre: 'Curso de Primeros Auxilios y Atención PreHospitalaria',
+      },
+      {
+        id: 5,
+        nombre: 'Curso de rescate es estructuras colapsadas en el Nivel Liviano  ',
+      },
+      {
+        id: 6,
+        nombre: 'Curso de rescate en espacios confinados',
+      },
+      {
+        id: 7,
+        nombre: 'Curso de Instructores',
+      },
+      {
+        id: 8,
+        nombre: 'Curso de búsqueda canina',
+      },
     ];
 
     this.selectPais = [

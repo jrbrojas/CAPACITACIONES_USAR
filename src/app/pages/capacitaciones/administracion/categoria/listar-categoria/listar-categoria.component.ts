@@ -8,6 +8,7 @@ import { EditarCategoriaComponent } from '../editar-categoria/editar-categoria.c
 export interface Categoria {
   acronimo: string;
   nombre: string;
+  nivel: string;
   descripcion: string;
 }
 
@@ -29,58 +30,57 @@ export class ListarCategoriaComponent implements OnInit {
     this.arrCategorias.push(
       {
         acronimo: 'C001',
-        nombre: 'Comando de Área',
-        descripcion: 'Descripcion de Comando de Área'
+        nombre: 'Gestión',
+        nivel : 'Liviano',
+        descripcion: 'Descripcion de Gestión'
       },
       {
         acronimo: 'C002',
-        nombre: 'Comandante de Incidente / Personal de Comando',
-        descripcion: 'Descripcion de Comandante de Incidente / Personal de Comando'
+        nombre: 'Búsqueda y Rescate',
+        nivel : 'Liviano',
+        descripcion: 'Descripcion de Búsqueda y Rescate'
       },
       {
         acronimo: 'C003',
-        nombre: 'Fuego prescrito',
-        descripcion: 'Descripcion de Fuego prescrito'
+        nombre: 'Médica',
+        nivel : 'Liviano',
+        descripcion: 'Descripcion de Médica'
       },
       {
         acronimo: 'C004',
-        nombre: 'Operaciones ',
-        descripcion: 'Descripcion de Operaciones '
-      },
-      {
-        acronimo: 'C005',
-        nombre: 'Operaciones aéreas',
-        descripcion: 'Descripcion de Operaciones aéreas'
-      },
-      {
-        acronimo: 'C006',
-        nombre: 'Planificación',
-        descripcion: 'Descripcion de Planificación'
-      },
-      {
-        acronimo: 'C007',
         nombre: 'Logística',
+        nivel : 'Liviano',
         descripcion: 'Descripcion de Logística'
       },
       {
+        acronimo: 'C005',
+        nombre: 'Gestión',
+        nivel : 'Mediano',
+        descripcion: 'Descripcion de Gestión'
+      },
+      {
+        acronimo: 'C006',
+        nombre: 'Búsqueda',
+        nivel : 'Mediano',
+        descripcion: 'Descripcion de Búsqueda '
+      },
+      {
+        acronimo: 'C007',
+        nombre: 'Rescate',
+        nivel : 'Mediano',
+        descripcion: 'Descripcion de Rescate'
+      },
+      {
         acronimo: 'C008',
-        nombre: 'Finanzas/administración',
-        descripcion: 'Descripcion de Finanzas/administración'
+        nombre: 'Médica',
+        nivel : 'Mediano',
+        descripcion: 'Descripcion de Médica'
       },
       {
         acronimo: 'C009',
-        nombre: 'Despacho',
-        descripcion: 'Descripcion de Despacho'
-      },
-      {
-        acronimo: 'C010',
-        nombre: 'Prevención / Educación',
-        descripcion: 'Descripcion de Prevención / Educación '
-      },
-      {
-        acronimo: 'C011',
-        nombre: 'Investigación',
-        descripcion: 'Descripcion de Investigación'
+        nombre: 'Logística',
+        nivel : 'Mediano',
+        descripcion: 'Descripcion de Logística'
       },
     )
   }
