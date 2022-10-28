@@ -1,0 +1,396 @@
+<app-breadcrumb [title]="'Administrado'" [items]="['Seguridad']" [active_item]="'Permisos'">
+</app-breadcrumb>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-3">
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-end">
+                            <button mat-icon-button color="primary" class="position-relative"
+                                (click)="viewEditDataBasic()">
+                                <mat-icon>edit</mat-icon>
+                            </button>
+                        </div>
+                        <div class="svg-half d-flex justify-content-center">
+                            <img src="https://i.pravatar.cc/75" />
+                        </div>
+                        <div class="text-center mb-4 mt-4 text-primary font-weight-bold">
+                            <h6>Anderson Fabian Zavaleta Rodriguez</h6>
+                        </div>
+                        <div class="align-middle">
+                            <table class="product-page-width">
+                                <tbody>
+                                    <tr class="d-flex justify-content-between mb-2 align-middle">
+                                        <td> <b>Fecha de nacimiento:</b></td>
+                                        <td>24/10/1995</td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between mb-2 align-middle">
+                                        <td> <b>Genero:</b>
+                                        </td>
+                                        <td>Masculino</td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between mb-2 align-middle">
+                                        <td> <b>Estado civil:</b></td>
+                                        <td>Soltero/a</td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between mb-2 align-middle">
+                                        <td> <b>Documento:
+                                            </b></td>
+                                        <td>05412368</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-middle">
+                            <h6 class="font-weigth-bold">Datos de Contacto</h6>
+                            <!--<button mat-icon-button color="primary" class="position-relative" (click)="viewEditDataBasic()">
+                                <mat-icon>edit</mat-icon>
+                            </button>-->
+                        </div>
+                        <div class="align-middle">
+                            <table class="product-page-width">
+                                <tbody>
+                                    <tr class="d-flex justify-content-start mb-2 align-middle">
+                                        <td>
+                                            <mat-icon color="primary" class="mr-2">phone</mat-icon>
+                                        </td>
+                                        <td>994852035</td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-start mb-2 align-middle">
+                                        <td>
+                                            <mat-icon color="primary" class="mr-2">mail</mat-icon>
+                                        </td>
+                                        <td>ejemplo@example.com</td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-start mb-2 align-middle">
+                                        <td>
+                                            <mat-icon color="primary" class="mr-2">home</mat-icon>
+                                        </td>
+                                        <td>Psj. Invento 234, Los Olivos, Lima, Lima</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-9">
+            <div class="card">
+                <div class="card-body">
+                    <mat-tab-group mat-align-tabs="center">
+                        <div class="row">
+                            <mat-tab label="Formación Profesional">
+                                <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <h6>Formacion academica</h6>
+                                    <button mat-icon-button class="btn btn-primary" (click)="addFormacion()">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <div *ngFor="let i of dataEducation">
+                                    <div class="mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="text-primary mt-3">{{i.profesion}}</h6>
+                                            <div>
+                                                <button mat-icon-button color="primary">
+                                                    <mat-icon>edit</mat-icon>
+                                                </button>
+                                                <button mat-icon-button color="primary">
+                                                    <mat-icon>delete</mat-icon>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bold">{{i.institucion}}</div>
+                                        <div class="font-weight-bold text-secondary">{{i.nivelEducativo}} - {{i.grado}}
+                                        </div>
+                                        <div class="text-secondary">{{i.fechaInicio}} - {{i.fechaFin}}, {{i.pais}}</div>
+                                    </div>
+                                </div>
+                                <br>
+                                <mat-divider></mat-divider>
+                                <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <h6>Especializacion</h6>
+                                    <button mat-icon-button class="btn btn-primary" (click)="viewEditEspecializacion()">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <div *ngFor="let i of especializacion">
+                                    <div class="mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="text-primary mt-3">{{i.nombreEspec}}</h6>
+                                            <div>
+                                                <button mat-icon-button color="primary">
+                                                    <mat-icon>edit</mat-icon>
+                                                </button>
+                                                <button mat-icon-button color="primary">
+                                                    <mat-icon>delete</mat-icon>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bold">{{i.codigoCertificado}}</div>
+                                        <div class="font-weight-bold text-secondary">{{i.grado}}
+                                        </div>
+                                        <div class="text-secondary">{{i.fechaInicio}} - {{i.fechaFin}}</div>
+                                    </div>
+                                    <br>
+                                    <mat-divider></mat-divider>
+                                </div>
+
+                                <mat-divider></mat-divider>
+                                <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <h6>Cursos</h6>
+                                    <button mat-icon-button class="btn btn-primary" (click)="viewEditEspecializacion()">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <div *ngFor="let i of cursos">
+                                    <div class="mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="text-primary mt-3">{{i.nombreEspec}}</h6>
+                                            <div>
+                                                <button mat-icon-button color="primary">
+                                                    <mat-icon>edit</mat-icon>
+                                                </button>
+                                                <button mat-icon-button color="primary">
+                                                    <mat-icon>delete</mat-icon>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bold">{{i.codigoCertificado}}</div>
+                                        <div class="font-weight-bold text-secondary">{{i.grado}}
+                                        </div>
+                                        <div class="text-secondary">{{i.fechaInicio}} - {{i.fechaFin}}</div>
+                                    </div>
+                                    <br>
+                                    <mat-divider></mat-divider>
+                                </div>
+
+                                <mat-divider></mat-divider>
+                                <!-- <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <h6>Conocimiento y habilidades</h6>
+                                    <button mat-icon-button class="btn btn-primary">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <div *ngFor="let j of conocimientos">
+                                    <div class="d-flex justify-content-start">
+                                        <div class="badge badge-primary mb-2">{{j.nombreConocimiento}}</div>
+                                    </div>
+
+                                </div>
+                                <mat-divider></mat-divider>
+                                <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <h6>Subproceso de Respuesta con mayor experiencia</h6>
+                                    <button mat-icon-button class="btn btn-primary">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <div *ngFor="let j of subProcesoResMayorExp">
+                                    <div class="d-flex">
+                                        <div class="badge badge-primary mb-2">{{j.nombreSubproceso}}</div>
+                                    </div>
+
+                                </div>
+                                <br> -->
+                                <!-- <mat-divider></mat-divider>
+                                <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <h6>Nivel de experiencia o conocimiento frente a peligros de origen natural</h6>
+                                    <button mat-icon-button class="btn btn-primary">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <div *ngFor="let j of nivelExpFrentePeligros">
+                                    <div class="d-flex">
+                                        <div class="badge badge-primary mb-2">{{j.nombreExp}} - {{j.nivel}}</div>
+                                    </div>
+
+                                </div> -->
+
+                                <mat-divider></mat-divider>
+                                <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <h6>Idiomas</h6>
+                                    <button (click)="addIdioma()" mat-icon-button class="btn btn-primary">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <div *ngFor="let j of idiomas">
+                                    <div class="d-flex">
+                                        <div class="badge badge-primary mb-2">{{j.nombreExp}} - {{j.nivel}}</div>
+                                    </div>
+
+                                </div>
+
+                            </mat-tab>
+                            <mat-tab label="Experiencia Laboral">
+
+                                <div class="d-flex justify-content-between mt-4 align-middle">
+                                    <b>
+                                        <h6>Experiencia laboral</h6>
+                                    </b>
+                                    <button mat-icon-button class="btn btn-primary" (click)="addExperiencia()">
+                                        <mat-icon>add</mat-icon>
+                                    </button>
+                                </div>
+                                <hr>
+                                <div *ngFor="let ex of experiencia">
+                                    <div class="mt-2">
+                                        <div>
+                                            <div class="row">
+                                                <div style="color: blue;" class="col-9">
+                                                    <h5>{{ex.cargo}}</h5>
+                                                </div>
+                                                <div class="col-3 text-right">
+                                                    <button mat-icon-button color="primary">
+                                                        <mat-icon>edit</mat-icon>
+                                                    </button>
+                                                    <button mat-icon-button color="primary">
+                                                        <mat-icon>delete</mat-icon>
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <b>
+                                                        <h6>{{ex.lugar}}</h6>
+                                                    </b>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>{{ex.fechaIn}} - {{ex.fechaFin}}</p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>{{ex.condicion}}</p>
+                                                </div>
+                                                <div *ngIf="ex.motivo != ''" class="col-12">
+                                                    <p>{{ex.motivo}}</p>
+                                                </div>
+                                                <div *ngIf="ex.estado == 'Inactivo'" class="col-12">
+                                                    <p style="color: red;">{{ex.estado}}</p>
+                                                </div>
+                                                <div *ngIf="ex.estado == 'Activo'" class="col-12">
+                                                    <p style="color: green;">{{ex.estado}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Aptitud Fisica">
+
+                                <div class="row pt-4">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Seleccione aptitud fisica</label>
+                                            <select class="form-control">
+                                                <option value="">Arduo</option>
+                                                <option value="">Moderado</option>
+                                                <option value="">Ligero</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Adjuntar Constancia de Aptitud física</label>
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Libro Tareas Posición (LTP)">
+
+                                <div class="mt-4">
+                                    <mat-form-field class="col-lg-4" appearance="outline">
+                                        <mat-label>Seleccione LTP</mat-label>
+                                        <select matNativeControl required formControlName="tarea"
+                                            (change)="changeEvent($event)">
+                                            <option value="" selected disabled>Seleccionar opcion</option>
+                                            <option value="1">LTP 1</option>
+                                            <option value="2">LTP 2</option>
+                                            <option value="3">LTP 3</option>
+                                        </select>
+                                    </mat-form-field>
+                                </div>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">ID</th>
+                                            <th class="text-center">NOMBRE DE TAREA</th>
+                                            <th class="text-center">DESCRIPCION</th>
+                                            <th class="text-center">CUMPLIO</th>
+                                            <th class="text-center">Evidencia (Adjunto)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <ng-container *ngIf="l1">
+                                            <tr class="text-center" *ngFor="let i of list1">
+                                                <td>{{i.id}}</td>
+                                                <td>{{i.nombre}}</td>
+                                                <td>{{i.descripcion}}</td>
+                                                <td>
+                                                    <mat-checkbox (change)="checked($event)"></mat-checkbox>
+                                                    <!-- <input type="checkbox" class="form-check-input" formControlName="isCheck" (change)="checked($event)"> -->
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="file" [disabled]="!isChecked">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </ng-container>
+
+                                        <ng-container *ngIf="l2">
+                                            <tr class="text-center" *ngFor="let i of list2">
+                                                <td>{{i.id}}</td>
+                                                <td>{{i.nombre}}</td>
+                                                <td>{{i.descripcion}}</td>
+                                                <td>
+                                                    <mat-checkbox (change)="checked($event)"></mat-checkbox>
+                                                    <!-- <input type="checkbox" class="form-check-input" formControlName="isCheck" (change)="checked($event)"> -->
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="file" [disabled]="!isChecked">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </ng-container>
+
+                                        <ng-container *ngIf="l3">
+                                            <tr class="text-center" *ngFor="let i of list3">
+                                                <td>{{i.id}}</td>
+                                                <td>{{i.nombre}}</td>
+                                                <td>{{i.descripcion}}</td>
+                                                <td>
+                                                    <mat-checkbox (change)="checked($event)"></mat-checkbox>
+                                                    <!-- <input type="checkbox" class="form-check-input" formControlName="isCheck" (change)="checked($event)"> -->
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="file" [disabled]="!isChecked">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </ng-container>
+
+                                    </tbody>
+                                </table>
+                            </mat-tab>
+                        </div>
+
+                    </mat-tab-group>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

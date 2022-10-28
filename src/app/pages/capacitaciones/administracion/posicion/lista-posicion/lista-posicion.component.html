@@ -1,0 +1,107 @@
+<app-breadcrumb [title]="'Posiciones'" [items]="['Posiciones']" [active_item]="'Posiciones'"></app-breadcrumb>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+
+                    <form>
+                        <div class="row">
+
+                            <mat-form-field class="col-lg-10" appearance="outline">
+                                <mat-label>Buscar por codigo, nombre o acronimo de la posicion</mat-label>
+                                <input formControlName="textoBusqueda" matInput type="text">
+                            </mat-form-field>
+                            <div class="col-sm-2">
+                                <a class="btn btn-primary"
+                                    ngbTooltip="Registrar"
+                                    style="margin-top : 10px"
+                                    (click)="registrarPosicion()">
+                                    <i class="fa fa-plus"></i>
+                                    Nuevo
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="table-responsive">
+                            <div id="data-source-1_wrapper" class="dataTables_wrapper">
+                                <div class="dataTables_length">
+                                    <label>Mostrar
+                                        <select name="data-source-1_length" formControlName="cantidadRegistro">
+                                            <option value="10" selected>10</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select> entradas</label>
+                                </div>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Categoria</th>
+                                            <th class="text-center">Acronimo</th>
+                                            <th class="text-center">Nombre</th>
+                                            <th class="text-center">Capacitaciones Requeridas</th>
+                                            <th class="text-center">Aptitud Fisica</th>
+                                            <th class="text-center">Capacitacion Adicional</th>
+                                            <th class="text-center">Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center align-middle" *ngFor="let i of arrPosiciones">
+                                        <td class="align-middle">
+                                            <div *ngFor="let item of arrCategorias">
+                                                <div *ngIf="i.codigo == item.codigoPosicion">
+                                                    {{item.nombre}}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            {{i.codigo}}
+                                        </td>
+                                        <td class="align-middle">
+                                          {{i.nombre}}
+                                        </td>
+                                        <td class="align-middle">
+                                          <div *ngFor="let item of arrCapacitacionesRequeridas">
+                                            <div *ngIf="i.codigo == item.codigoPosicion">
+                                                {{item.codigo}}
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div *ngFor="let item of arrAptitudFisica">
+                                                <div *ngIf="i.codigo == item.codigoPosicion">
+                                                    <span *ngIf="item.codigo == 1">Arduo</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div *ngFor="let item of arrCapacitacionesAdicionales">
+                                                <div *ngIf="i.codigo == item.codigoPosicion">
+                                                    <span *ngIf="item.codigo == null">Ninguno</span>
+                                                </div>
+                                            </div> 
+                                        </td>
+                                        <td class="align-middle">
+                                            <a style="color: #08afe0; cursor: pointer; font-size: 20px" ngbTooltip="Ver / Editar" (click)="editarVerPosicion()">
+                                              <i class="fa fa-edit"></i>
+                                            </a>
+                                            <a class="mr-2 ml-2" style="color: #f73164; cursor: pointer; font-size: 20px"
+                                              ngbTooltip="Eliminar" (click)="eliminarPosicion()">
+                                              <i class="fa fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
