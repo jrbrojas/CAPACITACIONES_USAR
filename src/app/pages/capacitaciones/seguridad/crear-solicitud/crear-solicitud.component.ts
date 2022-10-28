@@ -89,7 +89,7 @@ export class CrearSolicitudComponent implements OnInit {
     this.getInstitucionPublica();
     this.getInstitucionPrivada();
     this.perfiles = [
-      {"id":1,"descripcion":"Administrador GIRED"},
+      {"id":1,"descripcion":"Administrador USAR"},
       {"id":2,"descripcion":"Administrador Combatiente de Fuego"},
       {"id":3,"descripcion":"Administrador USAR"},
       {"id":4,"descripcion":"Administrado"},
