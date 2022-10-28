@@ -5,31 +5,17 @@ import { TYPE_ALERT } from 'src/app/shared/services/config';
 import { CrearPosicionComponent } from '../crear-posicion/crear-posicion.component';
 import { EditarPosicionComponent } from '../editar-posicion/editar-posicion.component';
 
-export interface Posicion {
-  nombre : string;
-  codigo : string;
-  calificadoComo : string;
-  aptitudFisica : number;
-}
-
 export interface Categoria {
-  codigoPosicion : string;
   nombre : string;
-}
-
-export interface CapacitacionRequerida {
-  codigoPosicion : string;
   codigo : string;
 }
 
-export interface CapacitacionAdicional {
-  codigoPosicion : string;
+export interface Curso {
   codigo : string;
-}
-
-export interface AptitudFisica {
-  codigoPosicion : string;
-  codigo : number;
+  tarea : string;
+  asignacion : string;
+  numeroSugerido : string;
+  codigoCategoria : string;
 }
 
 @Component({
@@ -39,11 +25,8 @@ export interface AptitudFisica {
 })
 export class ListaPosicionComponent implements OnInit {
 
-  public arrPosiciones : Array<Posicion> = []
   public arrCategorias : Array<Categoria> = []
-  public arrCapacitacionesRequeridas : Array<CapacitacionRequerida> = []
-  public arrCapacitacionesAdicionales : Array<CapacitacionAdicional> = []
-  public arrAptitudFisica : Array<AptitudFisica> = []
+  public arrCurso : Array<Curso> = []
 
   constructor(
     private modalService : NgbModal,
@@ -51,62 +34,161 @@ export class ListaPosicionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.arrAptitudFisica.push(
-      {
-        codigoPosicion : 'CIF2',
-        codigo : 1,
-      },
-      {
-        codigoPosicion : 'CIF1',
-        codigo : 2,
-      }
-    )
+
 
     this.arrCategorias.push(
       {
-        codigoPosicion : 'CIF2',
-        nombre : 'Operaciones'
-      }
-      )
-
-    this.arrPosiciones.push(
-      {
-        nombre : 'Combatiente de Incendios Forestales Tipo 2',
-        codigo : 'CIF2',
-        calificadoComo : null,
-        aptitudFisica : 1
-      }
-    )
-
-    this.arrCapacitacionesRequeridas.push(
-      {
-        codigoPosicion : 'CIF2',
-        codigo : 'SCI-100'
+        codigo : 'C001',
+        nombre : 'Gestion'
       },
       {
-        codigoPosicion : 'CIF2',
-        codigo : 'L-180',
+        codigo : 'C002',
+        nombre : 'Busqueda'
       },
       {
-        codigoPosicion : 'CIF2',
-        codigo : 'CR-130'
+        codigo : 'C003',
+        nombre : 'Rescate'
       },
       {
-        codigoPosicion : 'CIF2',
-        codigo : 'S-130'
+        codigo : 'C004',
+        nombre : 'Medica'
       },
       {
-        codigoPosicion : 'CIF2',
-        codigo : 'S-190'
+        codigo : 'C005',
+        nombre : 'Logistica'
       }
     )
 
-    this.arrCapacitacionesAdicionales.push(
-      {
-        codigoPosicion : 'CIF2',
-        codigo : null
-      }
-    )
+    this.arrCurso.push({
+      
+      codigo : 'LE',
+      tarea : 'Comando',
+      asignacion : 'Lider de Equipo',
+      numeroSugerido : '1',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'LA',
+      tarea : 'Coordinacion',
+      asignacion : 'Oficial de Planificacion',
+      numeroSugerido : '1',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'OP',
+      tarea : 'Planeacion / Seguimiento',
+      asignacion : 'Oficial de Planificacion',
+      numeroSugerido : '1',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'OE',
+      tarea : 'Enlace / Media / Reportes',
+      asignacion : 'Oficial de Enlace',
+      numeroSugerido : '1',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'IE',
+      tarea : 'Evaluacion y analisis',
+      asignacion : 'Ingeniero Estructural',
+      numeroSugerido : '1',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'OS',
+      tarea : 'Seguridad y Proteccion',
+      asignacion : 'Oficial de Seguridad',
+      numeroSugerido : '1',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'OC',
+      tarea : 'RDC / UCC',
+      asignacion : 'Oficial de Coordinacion',
+      numeroSugerido : '2',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'EBT',
+      tarea : 'Busqueda Tecnica',
+      asignacion : 'Especialista de Busqueda Tecnica',
+      numeroSugerido : '2',
+      codigoCategoria : 'C002'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Adiestramiento de Perros',
+      numeroSugerido : '4',
+      codigoCategoria : 'C002'
+    },
+    {
+      codigo : 'EMATPEL',
+      tarea : 'Evaluacion de Materiales Peligrosos',
+      asignacion : 'Especialista en MATPEL',
+      numeroSugerido : '2',
+      codigoCategoria : 'C002'
+    },
+    {
+      codigo :'LERTE',
+      tarea : 'Rompimiento y ruptura; corte; apuntalamiento; cuerta tecnica',
+      asignacion : 'Lider Equipo de Rescate y Tecnicos de rescate',
+      numeroSugerido : '14 (2 Equipos: 1 lider y 6 rescatistas c/u)',
+      codigoCategoria : 'C003'
+    },
+    {
+      codigo : 'EAP',
+      tarea : 'Levantamiento y movimiento',
+      asignacion : 'Especialista en aparejos pesados',
+      numeroSugerido : '2',
+      codigoCategoria : 'C003'
+    },
+    {
+      codigo : 'EMMPE',
+      tarea : 'Gestion del equipo medico: Coordinacion y administracion del equipo medico. Integracion con infraestructura sanitaria local. Atencion al Equipo (incluido Perros) y a las victimas encontradas',
+      asignacion : 'Especialista Medico y/o Medico/Paramedico o Enfermera',
+      numeroSugerido : '3',
+      codigoCategoria : 'C004'
+    },
+    {
+      codigo : 'LEL',
+      tarea : 'BoO',
+      asignacion : 'Lider del Equipo de logistica',
+      numeroSugerido : '1',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'EDT',
+      tarea : 'Agua',
+      asignacion : 'Especialista en Transporte',
+      numeroSugerido : '1',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'EEL',
+      tarea : 'Alimentacion',
+      asignacion : 'Especialista en logistica',
+      numeroSugerido : '1',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'AB',
+      tarea : 'Capacidad de transporte y combustible',
+      asignacion : 'Administrador de base',
+      numeroSugerido : '2',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'EC',
+      tarea : 'Comunicaciones',
+      asignacion : 'Especialista en Comunicacion',
+      numeroSugerido : '1',
+      codigoCategoria : 'C005'
+    },
+  )
+
+    
   }
 
   registrarPosicion(){
