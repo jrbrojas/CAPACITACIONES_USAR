@@ -65,13 +65,13 @@ export class ListaPosicionComponent implements OnInit {
     this.arrCategorias.push(
       {
         codigoPosicion : 'CIF2',
-        nombre : 'Operaciones'
+        nombre : 'Gestión'
       }
       )
 
     this.arrPosiciones.push(
       {
-        nombre : 'Combatiente de Incendios Forestales Tipo 2',
+        nombre : 'Lider de Equipo',
         codigo : 'CIF2',
         calificadoComo : null,
         aptitudFisica : 1
