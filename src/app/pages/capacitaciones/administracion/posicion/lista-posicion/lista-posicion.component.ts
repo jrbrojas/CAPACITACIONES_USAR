@@ -66,6 +66,10 @@ export class ListaPosicionComponent implements OnInit {
       {
         codigoPosicion : 'CIF2',
         nombre : 'Operaciones'
+      },
+      {
+        codigoPosicion : 'CIF1',
+        nombre : 'Operaciones1'
       }
       )
 
