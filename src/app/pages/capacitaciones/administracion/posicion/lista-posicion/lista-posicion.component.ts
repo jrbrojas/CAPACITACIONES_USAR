@@ -64,126 +64,63 @@ export class ListaPosicionComponent implements OnInit {
       codigo : 'LE',
       tarea : 'Comando',
       asignacion : 'Lider de Equipo',
-      numeroSugerido : '1',
+      numeroSugerido : 'Liviano',
       codigoCategoria : 'C001'
     },
     {
       codigo : 'LA',
       tarea : 'Coordinacion',
-      asignacion : 'Oficial de Planificacion',
-      numeroSugerido : '1',
+      asignacion : 'Lider de Equipo Designado',
+      numeroSugerido : 'Liviano',
       codigoCategoria : 'C001'
     },
     {
       codigo : 'OP',
-      tarea : 'Planeacion / Seguimiento',
+      tarea : 'Oficial de Planificación',
       asignacion : 'Oficial de Planificacion',
-      numeroSugerido : '1',
+      numeroSugerido : 'Liviano',
       codigoCategoria : 'C001'
     },
     {
       codigo : 'OE',
-      tarea : 'Enlace / Media / Reportes',
-      asignacion : 'Oficial de Enlace',
-      numeroSugerido : '1',
+      tarea : 'Oficial de Seguridad',
+      asignacion : 'Oficial de Seguridad',
+      numeroSugerido : 'Liviano',
       codigoCategoria : 'C001'
     },
     {
       codigo : 'IE',
-      tarea : 'Evaluacion y analisis',
+      tarea : 'Lider de Tripulación',
       asignacion : 'Ingeniero Estructural',
-      numeroSugerido : '1',
-      codigoCategoria : 'C001'
+      numeroSugerido : 'Liviano',
+      codigoCategoria : 'C002'
     },
     {
       codigo : 'OS',
-      tarea : 'Seguridad y Proteccion',
-      asignacion : 'Oficial de Seguridad',
-      numeroSugerido : '1',
-      codigoCategoria : 'C001'
+      tarea : 'Equipio de Busqueda y Rescato (incluyendo perros)',
+      asignacion : 'Equipio de Busqueda y Rescato (incluyendo perros)',
+      numeroSugerido : 'Liviano',
+      codigoCategoria : 'C002'
     },
     {
       codigo : 'OC',
       tarea : 'RDC / UCC',
-      asignacion : 'Oficial de Coordinacion',
-      numeroSugerido : '2',
-      codigoCategoria : 'C001'
+      asignacion : 'Especializta Médico y/o Médico/Paramédico/Enfermera',
+      numeroSugerido : 'Liviano',
+      codigoCategoria : 'C004'
     },
     {
       codigo : 'EBT',
       tarea : 'Busqueda Tecnica',
-      asignacion : 'Especialista de Busqueda Tecnica',
-      numeroSugerido : '2',
-      codigoCategoria : 'C002'
+      asignacion : 'Gestor del Equipo de Logística',
+      numeroSugerido : 'Liviano',
+      codigoCategoria : 'C005'
     },
     {
       codigo : 'AP',
       tarea : 'Busqueda Canina',
-      asignacion : 'Adiestramiento de Perros',
-      numeroSugerido : '4',
-      codigoCategoria : 'C002'
-    },
-    {
-      codigo : 'EMATPEL',
-      tarea : 'Evaluacion de Materiales Peligrosos',
-      asignacion : 'Especialista en MATPEL',
-      numeroSugerido : '2',
-      codigoCategoria : 'C002'
-    },
-    {
-      codigo :'LERTE',
-      tarea : 'Rompimiento y ruptura; corte; apuntalamiento; cuerta tecnica',
-      asignacion : 'Lider Equipo de Rescate y Tecnicos de rescate',
-      numeroSugerido : '14 (2 Equipos: 1 lider y 6 rescatistas c/u)',
-      codigoCategoria : 'C003'
-    },
-    {
-      codigo : 'EAP',
-      tarea : 'Levantamiento y movimiento',
-      asignacion : 'Especialista en aparejos pesados',
-      numeroSugerido : '2',
-      codigoCategoria : 'C003'
-    },
-    {
-      codigo : 'EMMPE',
-      tarea : 'Gestion del equipo medico: Coordinacion y administracion del equipo medico. Integracion con infraestructura sanitaria local. Atencion al Equipo (incluido Perros) y a las victimas encontradas',
-      asignacion : 'Especialista Medico y/o Medico/Paramedico o Enfermera',
-      numeroSugerido : '3',
-      codigoCategoria : 'C004'
-    },
-    {
-      codigo : 'LEL',
-      tarea : 'BoO',
-      asignacion : 'Lider del Equipo de logistica',
-      numeroSugerido : '1',
-      codigoCategoria : 'C005'
-    },
-    {
-      codigo : 'EDT',
-      tarea : 'Agua',
-      asignacion : 'Especialista en Transporte',
-      numeroSugerido : '1',
-      codigoCategoria : 'C005'
-    },
-    {
-      codigo : 'EEL',
-      tarea : 'Alimentacion',
-      asignacion : 'Especialista en logistica',
-      numeroSugerido : '1',
-      codigoCategoria : 'C005'
-    },
-    {
-      codigo : 'AB',
-      tarea : 'Capacidad de transporte y combustible',
-      asignacion : 'Administrador de base',
-      numeroSugerido : '2',
-      codigoCategoria : 'C005'
-    },
-    {
-      codigo : 'EC',
-      tarea : 'Comunicaciones',
-      asignacion : 'Especialista en Comunicacion',
-      numeroSugerido : '1',
+      asignacion : 'Responsable de Logística',
+      numeroSugerido : 'Liviano',
       codigoCategoria : 'C005'
     },
   )
