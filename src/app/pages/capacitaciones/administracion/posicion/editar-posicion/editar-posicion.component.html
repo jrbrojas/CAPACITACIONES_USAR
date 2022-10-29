@@ -16,7 +16,7 @@
       </mat-form-field>
       <mat-form-field class="col-lg-4" appearance="outline">
           <mat-label>Nombre de asignación</mat-label>
-          <input matInput type="text" value="Combatiente de Incendios Forestales Tipo 2" placeholder="Nombre de asignación">
+          <input matInput type="text" value="Lider de Equipo" placeholder="Nombre de asignación">
       </mat-form-field>
       <mat-form-field class="col-lg-4" appearance="outline">
           <mat-label>Acronimo de asignación</mat-label>
@@ -24,11 +24,15 @@
       </mat-form-field>
       <mat-form-field class="col-lg-6" appearance="outline">
           <mat-label>Calificado como</mat-label>
-          <select matNativeControl [(ngModel)]="idCalificado" [ngModelOptions]="{standalone: true}" required>
-              <option value="" selected disabled>Seleccionar opcion</option>
+          <select matNativeControl [(ngModel)]="idCategria" [ngModelOptions]="{standalone: true}" required>
+            <option *ngFor="let item of arrCalificado" [value]="item.id">{{item.nombre}}</option>
+        </select>
+          <!-- <select matNativeControl [(ngModel)]="idCalificado" [ngModelOptions]="{standalone: true}" value="Lider de Equipo" required>
+              <option>Lider de Equipo</option>
+              <option value="" disabled>Seleccionar opcion</option>
               <option value="">Ninguna</option>
-              <option *ngFor="let item of arrCalificado" [value]="item.id" >{{item.nombre}}</option>
-          </select>
+              <option *ngFor="let item of arrCalificado" [value]="item.id">{{item.nombre}}</option>
+          </select> -->
       </mat-form-field>
       <!-- <mat-form-field class="col-lg-6" appearance="outline">
           <mat-label>Aptitud Fisica</mat-label>
@@ -41,7 +45,7 @@
       </mat-form-field> -->
       <mat-form-field class="col-lg-12" appearance="outline">
           <mat-label>Descripcion de la posición</mat-label>
-          <textarea matInput required name="" id="" cols="30" rows="5" placeholder="Descripcion de l posición"></textarea>
+          <textarea matInput required name="" id="" cols="30" rows="5" value="DESCRIPCION DE LA ASIGNACION LIDER DE EQUIPO" placeholder="Descripcion de l posición"></textarea>
       </mat-form-field>
       <div class="d-flex justify-content-between">
         <div class="col-lg-3">
@@ -83,7 +87,7 @@
             </select>
           </mat-form-field>
         </div>
-        <div class="col-lg-3">
+        <!-- <div class="col-lg-3">
           <mat-label>LTP
             <button mat-icon-button (click)="ltpAdd()" aria-label="Example icon button with a vertical three dot icon">
               <mat-icon>add</mat-icon>
@@ -97,7 +101,7 @@
               <option *ngFor="let item of arrLTPSelect" [value]="item.id" >{{item.nombre}}</option>
             </select>
           </mat-form-field>
-        </div>
+        </div> -->
       </div>
 
   </div>
