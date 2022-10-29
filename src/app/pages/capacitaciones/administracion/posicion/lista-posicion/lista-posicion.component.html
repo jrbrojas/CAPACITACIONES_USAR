@@ -41,49 +41,45 @@
                                     <thead>
                                         <tr>
                                             <th class="text-center">Categoria</th>
-                                            <th class="text-center">Acronimo</th>
-                                            <th class="text-center">Nombre</th>
-                                            <th class="text-center">Capacitaciones Requeridas</th>
-                                           <!-- <th class="text-center">Aptitud Fisica</th> -->
-                                            <th class="text-center">Capacitacion Adicional</th>
+                                            <th class="text-center">Tareas</th>
+                                            <th class="text-center">Asignacion sugerida</th>
+                                            <th class="text-center">Numero sugerido</th>
                                             <th class="text-center">Opciones</th>
                                         </tr>
                                     </thead>
-                                    <tbody class="text-center align-middle" *ngFor="let i of arrPosiciones">
+                                    <tbody class="text-center align-middle" *ngFor="let i of arrCategorias">
                                         <td class="align-middle">
-                                            <div *ngFor="let item of arrCategorias">
-                                                <div *ngIf="i.codigo == item.codigoPosicion">
-                                                    {{item.nombre}}
+                                            {{i.nombre}}
+                                        </td>
+                                        <td class="align-middle">
+                                            <hr>
+                                            <div *ngFor="let item of arrCurso">
+                                                
+                                                <div *ngIf="i.codigo == item.codigoCategoria">
+                                                    {{item.tarea}}
+                                                    <hr>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="align-middle">
-                                            {{i.codigo}}
-                                        </td>
-                                        <td class="align-middle">
-                                          {{i.nombre}}
-                                        </td>
-                                        <td class="align-middle">
-                                          <div *ngFor="let item of arrCapacitacionesRequeridas">
-                                            <div *ngIf="i.codigo == item.codigoPosicion">
-                                                {{item.codigo}}
-                                            </div>
-                                          </div>
-                                        </td>
-                                        <!-- <td class="align-middle">
-                                            <div *ngFor="let item of arrAptitudFisica">
-                                                <div *ngIf="i.codigo == item.codigoPosicion">
-                                                    <span *ngIf="item.codigo == 1">Arduo</span>
+                                            <hr>
+                                            <div *ngFor="let item of arrCurso">
+                                                <div *ngIf="i.codigo == item.codigoCategoria">
+                                                    {{item.asignacion }}
+                                                    <hr>
                                                 </div>
                                             </div>
-                                        </td> -->
-                                        <td class="align-middle">
-                                            <div *ngFor="let item of arrCapacitacionesAdicionales">
-                                                <div *ngIf="i.codigo == item.codigoPosicion">
-                                                    <span *ngIf="item.codigo == null">Ninguno</span>
-                                                </div>
-                                            </div> 
                                         </td>
+                                        <td class="align-middle">
+                                            <hr>
+                                            <div *ngFor="let item of arrCurso">
+                                                <div *ngIf="i.codigo == item.codigoCategoria">
+                                                    {{item.numeroSugerido }}
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </td>
+
                                         <td class="align-middle">
                                             <a style="color: #08afe0; cursor: pointer; font-size: 20px" ngbTooltip="Ver / Editar" (click)="editarVerPosicion()">
                                               <i class="fa fa-edit"></i>
@@ -93,6 +89,7 @@
                                               <i class="fa fa-trash"></i>
                                             </a>
                                         </td>
+
                                     </tbody>
                                 </table>
                             </div>

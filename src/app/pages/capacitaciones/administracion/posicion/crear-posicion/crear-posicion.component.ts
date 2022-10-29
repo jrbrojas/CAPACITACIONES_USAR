@@ -74,39 +74,19 @@ export class CrearPosicionComponent implements OnInit {
   arrCategoria: any [] = [
     {
       id: 1,
-      nombre: 'Comandante de Incidente / Personal de Comando'
+      nombre: 'Gestión'
     },
     {
       id: 2,
-      nombre: 'Operaciones '
+      nombre: 'Búsqueda y Rescate '
     },
     {
       id: 3,
-      nombre: 'Operaciones aéreas'
+      nombre: 'Médica'
     },
     {
       id: 4,
-      nombre: 'Planificación'
-    },
-    {
-      id: 5,
-      nombre: 'Logística'
-    },
-    {
-      id: 6,
-      nombre: 'Despacho-coordinación ataque'
-    },
-    {
-      id: 7,
-      nombre: 'Prevención / Educación'
-    },
-    {
-      id: 8,
-      nombre: 'Investigación'
-    },
-    {
-      id: 9,
-      nombre: 'Operaciones'
+      nombre: 'Loística'
     }
   ]
 
@@ -114,93 +94,48 @@ export class CrearPosicionComponent implements OnInit {
     {
       id: 1,
       idCategoria: 1,
-      nombre: 'Comandante de Incidente Tipo 3',
+      nombre: 'Lider de Equipo',
       codigo: 'CIT3'
     }, {
       id: 2,
       idCategoria: 1,
-      nombre: 'Comandante de Incidente Tipo 4',
+      nombre: 'Lider del equipo designado',
       codigo: 'CIT4'
     }, {
       id: 3,
       idCategoria: 1,
-      nombre: 'Comandante de Incidente Tipo 5',
+      nombre: 'Oficial de Planificación',
       codigo: 'CIT5'
     }, {
       id: 4,
       idCategoria: 1,
-      nombre: 'Oficial de Enlace',
+      nombre: 'Oficial de Seguridad',
       codigo: 'OFEN'
     }, {
       id: 5,
       idCategoria: 1,
-      nombre: 'Oficial de Seguridad',
+      nombre: 'Lider de Tripulación',
       codigo: 'OFSE'
     }, {
       id: 6,
       idCategoria: 1,
-      nombre: 'Oficial de Información Pública',
+      nombre: 'Equipo de Búsqueda y Rescate (Incluyendo Perros)',
       codigo: 'OFIP'
     }, {
       id: 7,
       idCategoria: 2,
-      nombre: 'Jefe de Sección de Operaciones',
+      nombre: 'Especialista Médico y/o Médico/Paramedico/Enfermera.',
       codigo: 'JSOP'
     }, {
       id: 8,
       idCategoria: 2,
-      nombre: 'Supervisor de División',
+      nombre: 'Gestor del Equipo de logística',
       codigo: 'SUDI'
     }, {
       id: 9,
       idCategoria: 2,
-      nombre: 'Jefe de Brigada',
+      nombre: 'Responsable del Logística',
       codigo: 'JEFB'
-    }, {
-      id: 10,
-      idCategoria: 2,
-      nombre: 'Jefe de Cuadrilla / Combatiente de Incendios Forestales Tipo 1', 
-      codigo: 'JECU / CIF1'
-    }, {
-      id: 11,
-      idCategoria: 2,
-      nombre: 'Combatiente de Incendios Forestales Tipo 2',
-      codigo: 'CIF2'
-    }, {
-      id: 12,
-      idCategoria: 3,
-      nombre: 'Encargado de Helibase',
-      codigo: 'ENHE'
-    }, {
-      id: 13,
-      idCategoria: 3,
-      nombre: 'Miembro de Brigada Helitransportada',
-      codigo: 'MBHE'
-    }, {
-      id: 14,
-      idCategoria: 4,
-      nombre: 'Jefe de Sección de Planificación',
-      codigo: 'JSPL'
-    }, {
-      id: 15,
-      idCategoria: 5,
-      nombre: 'Jefe de Sección de Logística',
-      codigo: 'JSLO'
-    }, {
-      id: 16,
-      idCategoria: 6,
-      nombre: 'Despachador de ataque inicial',
-      codigo: 'DEAI'
-    }, {
-      id: 17,
-      idCategoria: 7,
-      nombre: 'Miembro de Equipo de Prevención- Educación',
-      codigo: 'MEPE'
-    }, {
-      id: 18,
-      idCategoria: 8,
-      nombre: 'Investigador de Incendios Forestales',
-      codigo: 'INIF'
     }
   ]
 
