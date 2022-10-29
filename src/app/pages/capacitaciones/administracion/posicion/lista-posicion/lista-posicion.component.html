@@ -42,14 +42,18 @@
                                         <tr>
                                             <th class="text-center">Categoria</th>
                                             <!-- <th class="text-center">Tareas</th> -->
-                                            <th class="text-center">Asignacion sugerida</th>
+                                            <th class="text-center">Nombre de la Asignación</th>
                                             <!-- <th class="text-center">Numero sugerido</th> -->
                                             <th class="text-center">Opciones</th>
                                         </tr>
                                     </thead>
-                                    <tbody class="text-center align-middle" *ngFor="let i of arrCategorias">
+                                    <tbody class="text-center align-middle" *ngFor="let i of arrCurso">
                                         <td class="align-middle">
-                                            {{i.nombre}}
+                                            <div *ngFor="let item of arrCategorias">
+                                                <div *ngIf="i.codigoCategoria == item.codigo">
+                                                    {{item.nombre }}
+                                                </div>
+                                            </div>
                                         </td>
                                         <!-- <td class="align-middle">
                                             <hr>
@@ -62,13 +66,7 @@
                                             </div>
                                         </td> -->
                                         <td class="align-middle">
-                                            <hr>
-                                            <div *ngFor="let item of arrCurso">
-                                                <div *ngIf="i.codigo == item.codigoCategoria">
-                                                    {{item.asignacion }}
-                                                    <hr>
-                                                </div>
-                                            </div>
+                                            {{i.asignacion }}
                                         </td>
                                         <!-- <td class="align-middle">
                                             <hr>
