@@ -25,6 +25,7 @@
       <mat-form-field class="col-lg-6" appearance="outline">
           <mat-label>Calificado como</mat-label>
           <select matNativeControl [(ngModel)]="idCalificado" [ngModelOptions]="{standalone: true}" required>
+              <option value="">Ninguna</option>
             <option *ngFor="let item of arrCalificado" [value]="item.id">{{item.nombre}}</option>
         </select>
           <!-- <select matNativeControl [(ngModel)]="idCalificado" [ngModelOptions]="{standalone: true}" value="Lider de Equipo" required>
