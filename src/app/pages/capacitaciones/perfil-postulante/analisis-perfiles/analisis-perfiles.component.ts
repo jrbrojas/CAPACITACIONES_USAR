@@ -73,6 +73,55 @@ export class AnalisisPerfilesComponent implements OnInit {
     
   ]
   
+  arrAsignacion: any[] = [
+    {
+      id: 1,
+      idCategoria: 1,
+      nombre: 'Lider de Equipo',
+      codigo: 'CIT3'
+    }, {
+      id: 2,
+      idCategoria: 1,
+      nombre: 'Lider del equipo designado',
+      codigo: 'CIT4'
+    }, {
+      id: 3,
+      idCategoria: 1,
+      nombre: 'Oficial de Planificación',
+      codigo: 'CIT5'
+    }, {
+      id: 4,
+      idCategoria: 1,
+      nombre: 'Oficial de Seguridad',
+      codigo: 'OFEN'
+    }, {
+      id: 5,
+      idCategoria: 1,
+      nombre: 'Lider de Tripulación',
+      codigo: 'OFSE'
+    }, {
+      id: 6,
+      idCategoria: 1,
+      nombre: 'Equipo de Búsqueda y Rescate (Incluyendo Perros)',
+      codigo: 'OFIP'
+    }, {
+      id: 7,
+      idCategoria: 2,
+      nombre: 'Especialista Médico y/o Médico/Paramedico/Enfermera.',
+      codigo: 'JSOP'
+    }, {
+      id: 8,
+      idCategoria: 2,
+      nombre: 'Gestor del Equipo de logística',
+      codigo: 'SUDI'
+    }, {
+      id: 9,
+      idCategoria: 2,
+      nombre: 'Responsable del Logística',
+      codigo: 'JEFB'
+    }
+  ]
+
   constructor(
     private modalService : NgbModal,
   ) { }

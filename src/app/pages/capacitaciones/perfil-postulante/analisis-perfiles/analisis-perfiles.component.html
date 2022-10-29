@@ -56,27 +56,10 @@
                           </mat-form-field>
 
                           <mat-form-field class="col-lg-6" appearance="outline">
-                            <mat-label>Posición</mat-label>
+                            <mat-label>Asignación</mat-label>
                             <select matNativeControl required>
                                 <option value="" selected disabled>Seleccionar opcion</option>
-                                <option value="">Comandante de Incidente Tipo 3</option>
-                                <option value="">Comandante de Incidente Tipo 4</option>
-                                <option value="">Comandante de Incidente Tipo 5</option>
-                                <option value="">Oficial de Enlace</option>
-                                <option value="">Oficial de Seguridad</option>
-                                <option value="">Oficial de Información Pública</option>
-                                <option value="">Jefe de Sección de Operaciones</option>
-                                <option value="">Supervisor de División</option>
-                                <option value="">Jefe de Brigada</option>
-                                <option value="">Jefe de Cuadrilla / Combatiente de Incendios Forestales Tipo</option>
-                                <option value="">Combatiente de Incendios Forestales Tipo 2</option>
-                                <option value="">Encargado de Helibase</option>
-                                <option value="">Miembro de Brigada Helitransportada</option>
-                                <option value="">Jefe de Sección de Planificació</option>
-                                <option value="">Jefe de Sección de Logística</option>
-                                <option value="">Despachador de ataque inicial</option>
-                                <option value="">Miembro de Equipo de Prevención- Educación</option>
-                                <option value="">Investigador de Incendios Forestales</option>
+                                <option value="" *ngFor="let item of arrAsignacion">{{item.nombre}}</option>
                               </select>
                         </mat-form-field>
                             <mat-form-field class="col-lg-3" appearance="outline">
