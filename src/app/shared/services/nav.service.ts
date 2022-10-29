@@ -114,7 +114,7 @@ export class NavService implements OnDestroy {
         { path: '/capacitaciones/administracion/categorias', title : 'Categorias', type : 'link'},
         { path: '/capacitaciones/administracion/posiciones' , title : 'Asignaciones', type : 'link'},
        // { path: '/capacitaciones/aptitud-fisica', title: 'Aptitud Física', type: 'link' },
-        { path: '/capacitaciones/libro-tareas-posición', title: 'Libro Tareas Posición (LTP)', type: 'link' },
+        // { path: '/capacitaciones/libro-tareas-posición', title: 'Libro Tareas Posición (LTP)', type: 'link' },
       ]
     },
     {
