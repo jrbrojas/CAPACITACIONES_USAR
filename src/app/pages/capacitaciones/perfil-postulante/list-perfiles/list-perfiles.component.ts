@@ -41,7 +41,7 @@ export class ListPerfilesComponent implements OnInit {
         birthDate : '24/10/1995',
         civilState : 'Soltero',
         genCompetitor : 'Masculino',
-        typeProfile : 'Combatiente del fuego',
+        typeProfile : 'USAR',
         estado : "Observado"
       },
       {
@@ -51,8 +51,8 @@ export class ListPerfilesComponent implements OnInit {
         birthDate : '26/10/1990',
         civilState : 'Casado',
         genCompetitor : 'Masculino',
-        typeProfile : 'GIRED',
-        estado : "aprobado",
+        typeProfile : 'USAR',
+        estado : "Aprobado",
       },
       {
         dni: '07531593',
@@ -62,7 +62,7 @@ export class ListPerfilesComponent implements OnInit {
         civilState : 'Divorciada',
         genCompetitor : 'Femenina',
         typeProfile : 'USAR',
-        estado : "por aprobar",
+        estado : "Por Aprobar",
       },
 
     )
