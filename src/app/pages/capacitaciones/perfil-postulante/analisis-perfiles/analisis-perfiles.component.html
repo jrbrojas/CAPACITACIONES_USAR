@@ -15,8 +15,8 @@
                                 <select matNativeControl required>
                                     <option value="" selected disabled>Seleccionar opcion</option>
                                     <option value="">USAR</option>
-                                    <option value="">Combatiente del Fuego</option>
-                                    <option value="">GIRED</option>
+                                    <!-- <option value="">Combatiente del Fuego</option>
+                                    <option value="">GIRED</option> -->
                                 </select>
                             </mat-form-field>
                             <mat-form-field class="col-lg-3" appearance="outline">
@@ -50,9 +50,8 @@
                               <mat-label>Cursos Certificados</mat-label>
                               <select matNativeControl required>
                                   <option value="" selected disabled>Seleccionar opcion</option>
-                                  <option value="">D-311 Despachador de Ataque Inicial</option>
-                                  <option value="">P-101 Prevención y Educación de Incendios Forestales</option>
-                                  <option value="">FI-110 Operaciones de Incendios Forestales y Protección de la Escena de Origen para Primeros Respondientes</option>
+                                  <option value="" *ngFor="let item of arrCursos">{{item.nombre}}</option>
+                                  
                               </select>
                           </mat-form-field>
 
