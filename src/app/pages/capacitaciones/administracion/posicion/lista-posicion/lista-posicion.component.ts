@@ -91,7 +91,7 @@ export class ListaPosicionComponent implements OnInit {
     {
       codigo : 'IE',
       tarea : 'Lider de Tripulación',
-      asignacion : 'Ingeniero Estructural',
+      asignacion : 'Lider de Tripulación',
       numeroSugerido : 'Liviano',
       codigoCategoria : 'C002'
     },
@@ -121,6 +121,139 @@ export class ListaPosicionComponent implements OnInit {
       tarea : 'Busqueda Canina',
       asignacion : 'Responsable de Logística',
       numeroSugerido : 'Liviano',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Lider de Equipo',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Lider Adjunto',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Oficial de Planificación',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Oficial de Enlace',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Ingeniero Estructural',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Oficial de Seguridad',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Oficial de Coordinación',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C001'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Especializta de Búsqueda Técnica',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C002'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Adiestrador de Perros',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C002'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Especialista en MATPEL',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C002'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Lider de Equipo de Rescate',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C003'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Técnico de Rescate',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C003'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Especialista en Aparejos Pesados',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C003'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Especialista Médico y/o Médico/Paramédico/Enfermera',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C004'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Lider de Equipo de Logística',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Especialista en Transporte',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Especialista en Logística',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Administrador de Base',
+      numeroSugerido : 'Mediano',
+      codigoCategoria : 'C005'
+    },
+    {
+      codigo : 'AP',
+      tarea : 'Busqueda Canina',
+      asignacion : 'Especialista en Comunicación',
+      numeroSugerido : 'Mediano',
       codigoCategoria : 'C005'
     },
   )
