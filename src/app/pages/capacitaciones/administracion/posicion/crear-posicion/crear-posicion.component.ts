@@ -86,7 +86,7 @@ export class CrearPosicionComponent implements OnInit {
     },
     {
       id: 4,
-      nombre: 'Loística'
+      nombre: 'Logística'
     }
   ]
 

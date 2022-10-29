@@ -28,7 +28,7 @@ export class EditarPosicionComponent implements OnInit {
   public allComplete : boolean = false;
 
   idCategria: number = 2;
-  idCalificado: number = 11;
+  idCalificado: number = 1;
   idExpriencia: number = 1;
   idLTP: number = 1;
   
