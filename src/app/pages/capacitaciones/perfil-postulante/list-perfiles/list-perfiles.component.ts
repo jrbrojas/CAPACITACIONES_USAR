@@ -52,7 +52,7 @@ export class ListPerfilesComponent implements OnInit {
         civilState : 'Casado',
         genCompetitor : 'Masculino',
         typeProfile : 'USAR',
-        estado : "aprobado",
+        estado : "Aprobado",
       },
       {
         dni: '07531593',
@@ -62,7 +62,7 @@ export class ListPerfilesComponent implements OnInit {
         civilState : 'Divorciada',
         genCompetitor : 'Femenina',
         typeProfile : 'USAR',
-        estado : "por aprobar",
+        estado : "Por Aprobar",
       },
 
     )
