@@ -68,10 +68,6 @@ const routes: Routes = [
         component: PermisosListComponent,
       },
       {
-        path: 'seguridad/cambiar-password',
-        component: CambiarPasswordComponent,
-      },
-      {
         path: 'seguridad/permisos-add',
         component: PermisosAddComponent,
       },
@@ -90,6 +86,10 @@ const routes: Routes = [
       {
         path : 'perfil-postulante/vista-administrado',
         component : VistaAdministradoComponent
+      },
+      {
+        path: 'perfil-postulante/cambiar-password',
+        component: CambiarPasswordComponent,
       },
       {
         path : 'perfil-postulante/vista-administrado/experiencia-modal',
