@@ -38,6 +38,7 @@ export class SidebarComponent implements OnInit {
         this.menuItems.splice(-1, 1)
       }
       if (tipoLogin == "2") {
+        this.menuItems.splice(0, 1)
         this.menuItems.splice(0, 5)
       }
       this.router.events.subscribe((event) => {

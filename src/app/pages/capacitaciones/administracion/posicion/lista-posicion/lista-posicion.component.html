@@ -42,9 +42,9 @@
                                         <tr>
                                             <th class="text-center">Categoria</th>
                                             <!-- <th class="text-center">Tareas</th> -->
+                                            <th class="text-center">Nivel</th>
                                             <th class="text-center">Nombre de la Asignación</th>
                                             <!-- <th class="text-center">Numero sugerido</th> -->
-                                            <th class="text-center">Nivel</th>
                                             <th class="text-center">Opciones</th>
                                         </tr>
                                     </thead>
@@ -67,6 +67,9 @@
                                             </div>
                                         </td> -->
                                         <td class="align-middle">
+                                            {{i.numeroSugerido }}
+                                        </td>
+                                        <td class="align-middle">
                                             {{i.asignacion }}
                                         </td>
                                         <!-- <td class="align-middle">
@@ -78,9 +81,6 @@
                                                 </div>
                                             </div>
                                         </td> -->
-                                        <td class="align-middle">
-                                            {{i.numeroSugerido }}
-                                        </td>
                                         <td class="align-middle">
                                             <a style="color: #08afe0; cursor: pointer; font-size: 20px" ngbTooltip="Ver / Editar" (click)="editarVerPosicion()">
                                               <i class="fa fa-edit"></i>

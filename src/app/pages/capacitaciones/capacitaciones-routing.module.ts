@@ -34,6 +34,7 @@ import { LibroTareasPosicionDetailsComponent } from './administracion/libro-tare
 import { GenerarCertificadoComponent } from './acreditacion/generar-certificado/generar-certificado.component';
 import { AcreditacionNevoComponent } from './acreditacion/acreditacion-nuevo/acreditacion-nuevo.component';
 import { AddIdiomaComponent } from './perfil-postulante/add-idioma/add-idioma.component';
+import { CambiarPasswordComponent } from './seguridad/cambiar-password/cambiar-password.component';
 const routes: Routes = [
   {
     path: '',
@@ -65,6 +66,10 @@ const routes: Routes = [
       {
         path: 'seguridad/permisos',
         component: PermisosListComponent,
+      },
+      {
+        path: 'seguridad/cambiar-password',
+        component: CambiarPasswordComponent,
       },
       {
         path: 'seguridad/permisos-add',

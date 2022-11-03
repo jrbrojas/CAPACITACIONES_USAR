@@ -82,6 +82,7 @@ import { AcreditacionNevoComponent } from './acreditacion/acreditacion-nuevo/acr
 import { AddPerfilesExperienciaComponent } from './perfil-postulante/add-perfiles-experiencia/add-perfiles-experiencia.component';
 import { AddIdiomaComponent } from './perfil-postulante/add-idioma/add-idioma.component';
 import { AddExperiencialaboralComponent } from './perfil-postulante/add-experiencialaboral/add-experiencialaboral.component';
+import { CambiarPasswordComponent } from './seguridad/cambiar-password/cambiar-password.component';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
   // Change this to your upload POST address:
@@ -135,7 +136,8 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     ModalCertificadoComponent,
     DialogOverviewExampleDialog,
     AddIdiomaComponent,
-    AddExperiencialaboralComponent
+    AddExperiencialaboralComponent,
+    CambiarPasswordComponent
   ],
   imports: [
     CommonModule,
