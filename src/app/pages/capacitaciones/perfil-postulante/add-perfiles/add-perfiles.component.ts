@@ -151,6 +151,17 @@ export class AddPerfilesComponent implements OnInit {
   selectNumero : any;
   selectLTP: any;
 
+  statusHuaico: boolean = false
+  statusHelada: boolean = false
+  statusSismo: boolean = false
+  statusIncendio: boolean = false
+  statusTsunami: boolean = false
+  statusVolcan: boolean = false
+  statusInundacion: boolean = false
+  statusLluvia: boolean = false
+  statusAmbiente: boolean = false
+  statusMateriales: boolean = false
+
   constructor(
     public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -201,6 +212,79 @@ export class AddPerfilesComponent implements OnInit {
       this.mostrarDatos();
     }
 
+  }
+
+  changeStatus(type : number) {
+    if(type == 0){
+      if(this.statusHuaico == false){
+        this.statusHuaico = true
+      }else{
+        this.statusHuaico = false
+      }
+    }
+    if(type == 1){
+      if(this.statusHelada == false){
+        this.statusHelada = true
+      }else{
+        this.statusHelada = false
+      }
+    }
+    if(type == 2){
+      if(this.statusLluvia == false){
+        this.statusLluvia = true
+      }else{
+        this.statusLluvia = false
+      }
+    }
+    if(type == 3){
+      if(this.statusIncendio == false){
+        this.statusIncendio = true
+      }else{
+        this.statusIncendio = false
+      }
+    }
+    if(type == 4){
+      if(this.statusTsunami == false){
+        this.statusTsunami = true
+      }else{
+        this.statusTsunami = false
+      }
+    }
+    if(type == 5){
+      if(this.statusVolcan == false){
+        this.statusVolcan = true
+      }else{
+        this.statusVolcan = false
+      }
+    }
+    if(type == 6){
+      if(this.statusInundacion == false){
+        this.statusInundacion = true
+      }else{
+        this.statusInundacion = false
+      }
+    } 
+    if(type == 7){
+      if(this.statusLluvia == false){
+        this.statusLluvia = true
+      }else{
+        this.statusLluvia = false
+      }
+    } 
+    if(type == 8){
+      if(this.statusAmbiente== false){
+        this.statusAmbiente = true
+      }else{
+        this.statusAmbiente = false
+      }
+    } 
+    if(type == 9){
+      if(this.statusMateriales == false){
+        this.statusMateriales = true
+      }else{
+        this.statusMateriales = false
+      }
+    }     
   }
 
   mostrarDatos(){
