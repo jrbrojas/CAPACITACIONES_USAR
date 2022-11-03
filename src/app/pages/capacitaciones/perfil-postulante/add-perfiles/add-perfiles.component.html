@@ -383,7 +383,7 @@
                 <label>¿En cuantas misiones USAR has participado?</label>
                 <select formControlName="aptitudFisica" class="form-control">
                   <option value="" selected disabled>Veces</option>
-                  <option *ngFor="let aptitudFisica of selectNivelExperienciaPeligro; let i = index" [ngValue]="aptitudFisica">{{ aptitudFisica.nombre }}</option>
+                  <option *ngFor="let aptitudFisica of selectNumero; let i = index" [ngValue]="aptitudFisica">{{ aptitudFisica.nombre }}</option>
                 </select>
               </div>       
             </div>
