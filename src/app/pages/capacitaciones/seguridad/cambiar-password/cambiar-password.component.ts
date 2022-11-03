@@ -34,7 +34,7 @@ export class CambiarPasswordComponent implements OnInit {
   onSave() {
     this.alert
     .questionAlertConfirm(
-      '¿Está seguro que desea cambiar passaword?',
+      '¿Está seguro que desea cambiar contraseña?',
       '',
       'Si, cambiar',
       TYPE_ALERT.QUESTION
@@ -43,7 +43,7 @@ export class CambiarPasswordComponent implements OnInit {
       Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: 'Password cambiado correctamente',
+        title: 'Contraseña cambiada correctamente',
         showConfirmButton: false,
         timer: 1500
       })
