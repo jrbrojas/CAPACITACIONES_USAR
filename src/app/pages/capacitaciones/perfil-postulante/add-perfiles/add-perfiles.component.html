@@ -369,6 +369,26 @@
             </mat-card-actions>
           </mat-card>
         </mat-tab>
+        <mat-tab label="Experiencia USAR">
+
+          <div class="row pt-4">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Seleccione Experiencia USAR</label>
+                <select formControlName="aptitudFisica" class="form-control">
+                  <option value="" selected disabled>Seleccionar opcion</option>
+                  <option *ngFor="let aptitudFisica of selectAptitudFisica; let i = index" [ngValue]="aptitudFisica">{{ aptitudFisica.nombre }}</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Adjuntar Constancia de Experiencia usar</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+            </div>
+          </div>
+        </mat-tab>
         <mat-tab label="Aptitud Fisica">
 
           <div class="row pt-4">
