@@ -11,7 +11,7 @@ import { TYPE_ALERT } from 'src/app/shared/services/config';
 export class PerfilesListComponent implements OnInit {
 
   public data: any = [
-    {
+    /* {
       id: 1,
       perfil: "Administrador USAR",
       descripcion: "Este perfil cuenta con todos los accesos y permisos permitidos para administrar informacón del personal GIRED",
@@ -24,7 +24,7 @@ export class PerfilesListComponent implements OnInit {
       descripcion: "Este perfil cuenta con todos los accesos y permisos permitidos para administrar informacón del personal Combatientes del Fuego",
       permisos: "Crear, Editar, Eliminar, Ver",
       habilitado: "Si"
-    },
+    }, */
     {
       id: 3,
       perfil: "Administrador USAR",
