@@ -34,7 +34,7 @@ export class CambiarPasswordComponent implements OnInit {
   onSave() {
     this.alert
     .questionAlertConfirm(
-      '¿Está seguro que desea cambiar contraseña?',
+      '¿Está seguro que desea cambiar la contraseña?',
       '',
       'Si, cambiar',
       TYPE_ALERT.QUESTION
