@@ -91,7 +91,7 @@ export class NavService implements OnDestroy {
         { path: '/capacitaciones/perfil-postulante/list-perfiles', title : 'Administrados', type: 'link' },
         // { path: '/capacitaciones/perfil-postulante/vista-administrado', title: 'Vista Externa', type:'link' },
         { path: '/capacitaciones/perfil-postulante/analisis-perfiles', title : 'Analisis Perfiles', type : 'link' },
-        { path: '/capacitaciones/seguridad/cambiar-password', title : 'Cambiar Password', type : 'link' }
+        //{ path: '/capacitaciones/seguridad/cambiar-password', title : 'Cambiar Password', type : 'link' }
       ]
     },
     {
@@ -130,6 +130,7 @@ export class NavService implements OnDestroy {
     {
       title: 'GENERAL', tooltip: 'General', icon: 'folder-plus', type: 'sub', active: false, children: [
         { path: '/capacitaciones/perfil-postulante/vista-administrado', title: 'Mi perfil', type:'link'},
+        { path: '/capacitaciones/perfil-postulante/cambiar-password', title : 'Cambiar Password', type : 'link' }
         /*{ path: '/capacitaciones/seguridad/solicitud-list', title: 'Solicitud de Usuario', type: 'link' },*/
 
       ]
