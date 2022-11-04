@@ -132,13 +132,13 @@
         </mat-tab>
         <mat-tab label="Formación Profesional">
           <div class="mt-4">
-            <mat-form-field class="col-lg-4" appearance="outline">
+            <!-- <mat-form-field class="col-lg-4" appearance="outline">
               <mat-label>Tipo de especializacion</mat-label>
               <select formControlName="tipoEspecializacion" matNativeControl required>
                 <option value="" selected disabled>Seleccionar opcion</option>
                 <option *ngFor="let tipoEspecializacion of selectTipoEspecializacion; let i = index" [ngValue]="tipoEspecializacion">{{ tipoEspecializacion.nombre }}</option>
               </select>
-            </mat-form-field>
+            </mat-form-field> -->
             <div class="d-flex justify-content-between">
               <h5>Formacion</h5>
               <button class="btn btn-primary" (click)="addSkillFormacion()">
