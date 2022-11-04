@@ -94,6 +94,114 @@ export class VistaAdministradoComponent implements OnInit {
   public list2: any;
   public list3: any;
   
+  
+  inNivelExperienciaSi1: number = 0;
+  inNivelExperienciaSi2: number = 0;
+  inNivelExperienciaSi3: number = 0;
+  inNivelExperienciaSi4: number = 0;
+  inNivelExperienciaSi5: number = 0;
+  inNivelExperienciaSi6: number = 0;
+  inNivelExperienciaSi7: number = 0;
+  inNivelExperienciaSi8: number = 0;
+  inNivelExperienciaSi9: number = 0;
+  inNivelExperienciaSi10: number = 0;
+
+  selectNivelExperienciaPeligro = [
+    {
+      id: 0,
+      nombre: 'Seleccionar opcion'
+    },
+    {
+      id: 1,
+      nombre: 'Si'
+    },
+    {
+      id: 2,
+      nombre: 'No'
+    }
+  ]
+  selectNumero = [
+    {
+      id: 1,
+      nombre: '1'
+    },
+    {
+      id: 2,
+      nombre: '2'
+    },
+    {
+      id: 3,
+      nombre: '3'
+    },
+    {
+      id: 4,
+      nombre: '4'
+    },
+    {
+      id: 5,
+      nombre: '5'
+    },
+    {
+      id: 6,
+      nombre: '6'
+    },
+    {
+      id: 7,
+      nombre: '7'
+    },
+    {
+      id: 8,
+      nombre: '8'
+    },
+    {
+      id: 9,
+      nombre: '9'
+    },
+    {
+      id: 10,
+      nombre: '10'
+    },
+    {
+      id: 11,
+      nombre: '11'
+    },
+    {
+      id: 12,
+      nombre: '12'
+    },
+    {
+      id: 13,
+      nombre: '13'
+    },
+    {
+      id: 14,
+      nombre: '14'
+    },
+    {
+      id: 15,
+      nombre: '15'
+    },
+    {
+      id: 16,
+      nombre: '16'
+    },
+    {
+      id: 17,
+      nombre: '17'
+    },
+    {
+      id: 18,
+      nombre: '18'
+    },
+    {
+      id: 19,
+      nombre: '19'
+    },
+    {
+      id: 20,
+      nombre: '20'
+    },
+  ]
   public data1: any = [
     {
       id: 1,
