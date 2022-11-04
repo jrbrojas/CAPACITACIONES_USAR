@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AddPerfilesComponent } from '../add-perfiles/add-perfiles.component';
 
@@ -126,6 +127,7 @@ export class AnalisisPerfilesComponent implements OnInit {
 
   constructor(
     private modalService : NgbModal,
+    public dialog: MatDialog,
   ) { }
 
   ngOnInit(): void {
@@ -162,20 +164,15 @@ export class AnalisisPerfilesComponent implements OnInit {
   }
 
   verPerfil(){
-    const modalRef = this.modalService.open(AddPerfilesComponent, {
-        size: 'xl',
-        ariaLabelledBy: 'modal',
-        centered: true,
-        windowClass: 'modal',
-        backdrop: 'static'
+    console.log('xd')
+    const modalRef = this.dialog.open(AddPerfilesComponent, {
+      minHeight: '90%',
+      data: {idUsuario: 1},
     })
 
-    modalRef.componentInstance.idUsuario = 1;
-    modalRef.result.then((res) => {
-
-    }, (reason) => {
-
-    })
+    modalRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
 
   }
 
