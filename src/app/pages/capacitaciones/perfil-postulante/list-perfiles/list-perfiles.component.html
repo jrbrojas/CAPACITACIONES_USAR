@@ -45,7 +45,8 @@
                                         <tr>
                                             <th class="text-center">DNI</th>
                                             <th class="text-center">Apellidos y Nombres</th>
-                                            <th class="text-center">Tipo de Especialización</th>
+                                            <th class="text-center">Fecha Registro</th>
+                                            <th class="text-center">Fecha Aprobación</th>
                                             <th class="text-center">Estado</th>
                                             <th class="text-center">Opciones</th>
                                         </tr>
@@ -55,7 +56,8 @@
                                         <tr class="text-center" *ngFor="let i of dataBasicProfile">
                                             <td>{{i.dni}}</td>
                                             <td>{{i.lastNameCompetitor}} {{i.namesCompetitor}}</td>
-                                            <td>{{i.typeProfile}}</td>
+                                            <td>{{i.fechaRegistro}}</td>
+                                            <td>{{i.fechaAprobado}}</td>
                                             <td>{{i.estado}}</td>
                                             <td>
                                                 <div>
