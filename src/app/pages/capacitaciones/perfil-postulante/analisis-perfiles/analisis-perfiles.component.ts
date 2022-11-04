@@ -5,8 +5,10 @@ import { AddPerfilesComponent } from '../add-perfiles/add-perfiles.component';
 export interface administrado {
   dni : string;
   apellidosNombres: string;
-  tipoCertificacion : string;
-  aptitudFisica: string;
+  asignacion : string;
+  departamento: string;
+  provincia: string;
+  distrito: string;
   nivelExperiencia: string;
   estado : string;
 }
@@ -22,57 +24,57 @@ export class AnalisisPerfilesComponent implements OnInit {
   public arrAdministrados : administrado[] = []
 
   arrCursos: any [] = [
-    {        
+    {
       nivel: 'Básico',
       nombre : 'Curso Básico del Sistema de Comando de Incidentes',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'D-311',
     },
-    {        
+    {
       nivel: 'Básico',
       nombre : 'Primera Respuesta a Incidentes con Materiales Peligrosos',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'P-101',
     },
-    {        
+    {
       nivel: 'Intermedio',
       nombre : 'Rescate con Cuerdas',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'FI-110',
     },
-    {        
+    {
       nivel: 'Intermedio',
       nombre : 'Curso de Primeros Auxilios y Atención PreHospitalaria',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'FI-210',
     },
-    {        
+    {
       nivel: 'Básico',
       nombre : 'Curso de rescate es estructuras colapsadas en el Nivel Liviano  ',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'L-180',
     },
-    {        
+    {
       nivel: 'Básico',
       nombre : 'Curso de rescate en espacios confinados',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'L-280',
     },
-    {        
+    {
       nivel: 'Básico',
       nombre : 'Curso de Instructores',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'M-410',
     },
-    {        
+    {
       nivel: 'Básico',
       nombre : 'Curso de búsqueda canina',
       descripcion : 'Este curso es para reforzar el liderazgos frente a peligros de incendios forestales',
       codigo : 'M-410',
     },
-    
+
   ]
-  
+
   arrAsignacion: any[] = [
     {
       id: 1,
@@ -130,24 +132,30 @@ export class AnalisisPerfilesComponent implements OnInit {
     this.arrAdministrados.push({
       dni : '74239485',
       apellidosNombres : 'Olivera Perez Manuel',
-      tipoCertificacion : 'GIRED',
-      aptitudFisica: 'Arduo',
+      asignacion : 'Lider de equipo',
+      departamento: 'Lima',
+      provincia: 'Lima',
+      distrito: 'Lince',
       nivelExperiencia: 'Media',
       estado : 'Activo'
     },
     {
       dni : '12345678',
       apellidosNombres : 'Caballero Ramos Lucas',
-      tipoCertificacion : 'USAR',
-      aptitudFisica: 'Moderado',
+      asignacion : 'Lider de equipo designado',
+      departamento: 'Junin',
+      provincia: 'Satipo',
+      distrito: 'Pangoa',
       nivelExperiencia: 'Alta',
       estado : 'Activo'
     },
     {
       dni : '74239485',
       apellidosNombres : 'Paredes Sanchez María',
-      tipoCertificacion : 'GIRED',
-      aptitudFisica: 'Ligero',
+      asignacion : 'Official de planificacion',
+      departamento: 'Lima',
+      provincia: 'Lima',
+      distrito: 'San Isidro',
       nivelExperiencia: 'Baja',
       estado : 'Activo'
     })

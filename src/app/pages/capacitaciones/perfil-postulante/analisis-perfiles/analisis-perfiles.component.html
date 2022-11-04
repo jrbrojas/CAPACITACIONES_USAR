@@ -10,13 +10,11 @@
                     <form>
                         <div class="row">
 
-                            <mat-form-field class="col-lg-3" appearance="outline">
+                            <!-- <mat-form-field class="col-lg-3" appearance="outline">
                                 <mat-label>Tipo de Certificación</mat-label>
                                 <select matNativeControl required>
                                     <option value="" selected disabled>Seleccionar opcion</option>
                                     <option value="">USAR</option>
-                                    <!-- <option value="">Combatiente del Fuego</option>
-                                    <option value="">GIRED</option> -->
                                 </select>
                             </mat-form-field>
                             <mat-form-field class="col-lg-3" appearance="outline">
@@ -36,7 +34,7 @@
                                 <option value="">Media</option>
                                 <option value="">Baja</option>
                             </select>
-                        </mat-form-field>
+                        </mat-form-field> -->
                         <mat-form-field class="col-lg-3" appearance="outline">
                             <mat-label>Años de Experiencia</mat-label>
                             <select matNativeControl required>
@@ -46,16 +44,16 @@
                                 <option value="">Mayor a 10 anios</option>
                             </select>
                         </mat-form-field>
-                            <mat-form-field class="col-lg-6" appearance="outline">
+                            <mat-form-field class="col-lg-3" appearance="outline">
                               <mat-label>Cursos Certificados</mat-label>
                               <select matNativeControl required>
                                   <option value="" selected disabled>Seleccionar opcion</option>
                                   <option value="" *ngFor="let item of arrCursos">{{item.nombre}}</option>
-                                  
+
                               </select>
                           </mat-form-field>
 
-                          <mat-form-field class="col-lg-6" appearance="outline">
+                          <mat-form-field class="col-lg-3" appearance="outline">
                             <mat-label>Asignación</mat-label>
                             <select matNativeControl required>
                                 <option value="" selected disabled>Seleccionar opcion</option>
@@ -129,20 +127,20 @@
                                         <tr>
                                             <th class="text-center">DNI</th>
                                             <th class="text-center">Apellidos y Nombres</th>
-                                            <th class="text-center">Tipo de Certificación</th>
-                                            <th class="text-center">Aptitud Física</th>
-                                            <th class="text-center">Nivel de Experiencia</th>
-                                            <th class="text-center">Estado</th>
+                                            <th class="text-center">Asignación</th>
+                                            <th class="text-center">Departamento</th>
+                                            <th class="text-center">Provincia</th>
+                                            <th class="text-center">Distrito</th>
                                             <th class="text-center">Opciones</th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-center" *ngFor="let administrados of arrAdministrados">
                                         <td>{{administrados.dni}}</td>
                                         <td>{{administrados.apellidosNombres}}</td>
-                                        <td>{{administrados.tipoCertificacion}}</td>
-                                        <td>{{administrados.aptitudFisica}}</td>
-                                        <td>{{administrados.nivelExperiencia}}</td>
-                                        <td>{{administrados.estado}}</td>
+                                        <td>{{administrados.asignacion}}</td>
+                                        <td>{{administrados.departamento}}</td>
+                                        <td>{{administrados.provincia}}</td>
+                                        <td>{{administrados.distrito}}</td>
                                         <td>
                                             <a (click)="verPerfil()"
                                             style="cursor : pointer"
