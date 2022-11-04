@@ -25,6 +25,17 @@ export class Formacion {
 })
 export class AddPerfilesComponent implements OnInit {
 
+  inNivelExperienciaSi1: number = 0;
+  inNivelExperienciaSi2: number = 0;
+  inNivelExperienciaSi3: number = 0;
+  inNivelExperienciaSi4: number = 0;
+  inNivelExperienciaSi5: number = 0;
+  inNivelExperienciaSi6: number = 0;
+  inNivelExperienciaSi7: number = 0;
+  inNivelExperienciaSi8: number = 0;
+  inNivelExperienciaSi9: number = 0;
+  inNivelExperienciaSi10: number = 0;
+
   idUsuario: number = 0;
   fichaPerfil : FichaPerfil = new FichaPerfil();
   public form: FormGroup
@@ -489,16 +500,12 @@ export class AddPerfilesComponent implements OnInit {
     this.selectNivelExperienciaPeligro = [
       {
         id: 1,
-        nombre: 'Alto'
+        nombre: 'Si'
       },
       {
         id: 2,
-        nombre: 'Medio'
-      },
-      {
-        id: 3,
-        nombre: 'Bajo'
-      },
+        nombre: 'No'
+      }
     ]
     this.selectNumero = [
       {
