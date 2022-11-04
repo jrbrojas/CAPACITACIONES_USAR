@@ -499,6 +499,10 @@ export class AddPerfilesComponent implements OnInit {
     ]
     this.selectNivelExperienciaPeligro = [
       {
+        id: 0,
+        nombre: 'Seleccionar opcion'
+      },
+      {
         id: 1,
         nombre: 'Si'
       },
