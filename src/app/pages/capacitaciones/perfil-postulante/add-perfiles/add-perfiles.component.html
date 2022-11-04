@@ -51,6 +51,15 @@
                 <option *ngFor="let genero of selectGeneros; let i = index" [ngValue]="genero">{{ genero.nombre }}</option>
               </select>
             </mat-form-field>
+            <h6>Institución y Equipo USAR a la que pertenece:</h6>
+            <mat-form-field class="col-lg-6" appearance="outline">
+              <mat-label>Nombre de la Institución</mat-label>
+              <input matInput type="text" placeholder="Nombre de la Institución">
+            </mat-form-field>
+            <mat-form-field class="col-lg-6" appearance="outline">
+              <mat-label>Nombre del Equipo USAR</mat-label>
+              <input matInput type="text" placeholder="Nombre del Equipo USAR">
+            </mat-form-field>
             <h6>Informacion de contacto</h6>
             <mat-form-field class="col-lg-6" appearance="outline">
               <mat-label>Correo electronico</mat-label>

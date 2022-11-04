@@ -70,7 +70,7 @@ export class ListaPosicionComponent implements OnInit {
     {
       codigo : 'LA',
       tarea : 'Coordinacion',
-      asignacion : 'Lider de Equipo Designado',
+      asignacion : 'Lider de Equipo (Designado)',
       numeroSugerido : 'Liviano',
       codigoCategoria : 'C001'
     },

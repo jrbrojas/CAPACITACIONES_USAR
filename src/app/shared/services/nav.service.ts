@@ -105,7 +105,7 @@ export class NavService implements OnDestroy {
       ]
     },*/
     {
-      title: 'ACREDITACIÓN', tooltip: 'ACREDITACIÓN', icon: 'file-plus', type: 'sub', active: false, children: [
+      title: 'CREDENCIALIZACION', tooltip: 'CREDENCIALIZACION', icon: 'file-plus', type: 'sub', active: false, children: [
         { path: '/capacitaciones/acreditacion/generar-certificado', title: 'Emitir Certificado', type: 'link' },
       ]
     },
