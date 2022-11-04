@@ -365,7 +365,7 @@ export class AddPerfilesComponent implements OnInit {
       },
       {
         id: 4,
-        nombre: 'Cursos'
+        nombre: 'Curso'
       },
       {
         id: 5,
