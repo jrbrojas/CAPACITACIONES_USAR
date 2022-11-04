@@ -14,6 +14,8 @@ export interface DataBasicProfile{
   civilState : string;
   genCompetitor : string;
   typeProfile : string;
+  fechaRegistro: string;
+  fechaAprobado: string;
   estado : string;
 }
 
@@ -42,6 +44,8 @@ export class ListPerfilesComponent implements OnInit {
         civilState : 'Soltero',
         genCompetitor : 'Masculino',
         typeProfile : 'USAR',
+        fechaRegistro: '31/10/2022',
+        fechaAprobado: '03/11/2022',
         estado : "Observado"
       },
       {
@@ -52,6 +56,8 @@ export class ListPerfilesComponent implements OnInit {
         civilState : 'Casado',
         genCompetitor : 'Masculino',
         typeProfile : 'USAR',
+        fechaRegistro: '31/10/2022',
+        fechaAprobado: '03/11/2022',
         estado : "Aprobado",
       },
       {
@@ -62,6 +68,8 @@ export class ListPerfilesComponent implements OnInit {
         civilState : 'Divorciada',
         genCompetitor : 'Femenina',
         typeProfile : 'USAR',
+        fechaRegistro: '31/10/2022',
+        fechaAprobado: '03/11/2022',
         estado : "Por Aprobar",
       },
 
