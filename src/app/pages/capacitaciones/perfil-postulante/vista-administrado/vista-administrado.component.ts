@@ -314,21 +314,21 @@ export class VistaAdministradoComponent implements OnInit {
       {
         nombreEspec: 'D-311 Despachador de Ataque Inicial',
         codigoCertificado: 'Compañía General de Bomberos del Perú',
-        grado: 'CURSO TERMINADO',
+        grado: 'COMPLETO',
         fechaInicio: '10/06/2011',
         fechaFin: '01/12/2013',
       },
       {
         nombreEspec: 'FI-110 Operaciones de Incendios Forestales y Protección de la Escena de Origen para Primeros Respondientes',
         codigoCertificado: 'Compañía General de Bomberos de Colombia',
-        grado: 'CURSO TERMINADO',
+        grado: 'COMPLETO',
         fechaInicio: '15/08/2015',
         fechaFin: '12/10/2017',
       },
       {
         nombreEspec: 'FI-210 Investigación de origen y causa de incendios forestales',
         codigoCertificado: 'Compañía General de Bomberos de Brasil',
-        grado: 'CURSO TERMINADO',
+        grado: 'COMPLETO',
         fechaInicio: '18/06/2019',
         fechaFin: '01/10/2021',
       }
