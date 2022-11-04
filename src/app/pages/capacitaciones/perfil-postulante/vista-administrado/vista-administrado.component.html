@@ -243,46 +243,82 @@
                                     </button>
                                 </div>
                                 <hr>
-                                <div *ngFor="let ex of experiencia">
-                                    <div class="mt-2">
+                                <mat-card  class="example-card">
+                                    <mat-card-actions class="col-lg-12">
+                                      <div class="d-flex justify-content-between">
+                                        <h5 style="color: blue;">Jefe de proyectos agiles</h5>
                                         <div>
-                                            <div class="row">
-                                                <div style="color: blue;" class="col-9">
-                                                    <h5>{{ex.cargo}}</h5>
-                                                </div>
-                                                <div class="col-3 text-right">
-                                                    <button mat-icon-button color="primary">
-                                                        <mat-icon>edit</mat-icon>
-                                                    </button>
-                                                    <button mat-icon-button color="primary">
-                                                        <mat-icon>delete</mat-icon>
-                                                    </button>
-                                                </div>
-                                                <div class="col-12">
-                                                    <b>
-                                                        <h6>{{ex.lugar}}</h6>
-                                                    </b>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>{{ex.fechaIn}} - {{ex.fechaFin}}</p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>{{ex.condicion}}</p>
-                                                </div>
-                                                <div *ngIf="ex.motivo != ''" class="col-12">
-                                                    <p>{{ex.motivo}}</p>
-                                                </div>
-                                                <div *ngIf="ex.estado == 'Inactivo'" class="col-12">
-                                                    <p style="color: red;">{{ex.estado}}</p>
-                                                </div>
-                                                <div *ngIf="ex.estado == 'Activo'" class="col-12">
-                                                    <p style="color: green;">{{ex.estado}}</p>
-                                                </div>
+                                          <button class="btn" style="color: rgb(92, 92, 92);">
+                                            <div>
+                                              <mat-icon>edit</mat-icon>
                                             </div>
+                                          </button>
+                                          <button class="btn" style="color: rgb(92, 92, 92);">
+                                            <div>
+                                              <mat-icon>delete</mat-icon>
+                                            </div>
+                                          </button>
                                         </div>
-                                    </div>
-                                    <hr>
-                                </div>
+                                      </div>
+                                    </mat-card-actions>
+                                    <mat-card-actions>
+                                      <h4>MUNICIPALIDAD DE LIMA - HOSPITALES DE LA SOLIDARIDAD</h4>
+                                    </mat-card-actions>
+                                    <mat-card-subtitle>
+                                      Nov 2021 -Feb 2022
+                                    </mat-card-subtitle>
+                                    <mat-card-content>
+                                      <a>
+                                        <li>Responsable de liderar el equipo SCRUM del proyecto para lograr el alcance definido en coordinación
+                                          con el cliente</li>
+                                        <li>Realizar seguimiento a los indicadores de presupuesto y tiempo, de acuerdo con el plan de trabajo
+                                          planificado. Lenguajes de programación</li>
+                                      </a>
+                                      <br>
+                                      <div>
+                                        <p><strong>5 Personas a cargo</strong></p>
+                                        <p><strong>Manejaba un presupuesto anual: </strong> Si</p>
+                                      </div>
+                                    </mat-card-content>
+                                    <mat-divider></mat-divider>
+                                    <mat-card-actions class="col-lg-12 mt-4">
+                                      <div class="d-flex justify-content-between">
+                                        <h5 style="color: blue;" class="mt-4">Jefe de proyectos agiles</h5>
+                                        <div>
+                                          <button class="btn" style="color: rgb(92, 92, 92);">
+                                            <div>
+                                              <mat-icon>edit</mat-icon>
+                                            </div>
+                                          </button>
+                                          <button class="btn" style="color: rgb(92, 92, 92);">
+                                            <div>
+                                              <mat-icon>delete</mat-icon>
+                                            </div>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </mat-card-actions>
+                                    <mat-card-actions>
+                                      <h4>JEFE DIRECCION DE RESPUESTA - INDECI</h4>
+                                    </mat-card-actions>
+                                    <mat-card-subtitle>
+                                      Nov 2021 - Feb 2022
+                                    </mat-card-subtitle>
+                                    <mat-card-content>
+                                      <a>
+                                        <li>Responsable de liderar el equipo SCRUM del proyecto para lograr el alcance definido en coordinación con el cliente</li>
+                                        <li>Realizar seguimiento a los indicadores de presupuesto y tiempo, de acuerdo con el plan de trabajo planificado. Lenguajes de programación</li>
+                                      </a>
+                                      <br>
+                                      <div>
+                                        <p><strong>20 Personas a cargo</strong></p>
+                                        <p><strong>Manejaba un presupuesto anual : Si</strong></p>
+                                      </div>
+                                    </mat-card-content>
+                                    <mat-card-actions>
+                                      <h5></h5>
+                                    </mat-card-actions>
+                                  </mat-card>
                             </mat-tab>
                             
                             <mat-tab label="Experiencia USAR">
