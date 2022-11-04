@@ -99,11 +99,11 @@ export class NavService implements OnDestroy {
         { path: '/capacitaciones/consulta-perfil-profesional', title: 'Consulta Perfil Profesional', type: 'link' },
       ]
     },
-    {
+    /*{
       title: 'CALIFICACION', tooltip: 'CONSULTA', icon: 'shield', type: 'sub', active: false, children: [
         { path: '/capacitaciones/acreditacion/list', title: 'Calificación', type: 'link' },
       ]
-    },
+    },*/
     {
       title: 'ACREDITACIÓN', tooltip: 'ACREDITACIÓN', icon: 'file-plus', type: 'sub', active: false, children: [
         { path: '/capacitaciones/acreditacion/generar-certificado', title: 'Emitir Certificado', type: 'link' },
