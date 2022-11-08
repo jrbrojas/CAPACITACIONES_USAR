@@ -35,11 +35,11 @@ export class SidebarComponent implements OnInit {
       console.log("el tipo de login es", tipoLogin);
 
       if (tipoLogin == "1") {
-        this.menuItems.splice(-1, 1)
+        this.menuItems.splice(-1, 2)
       }
       if (tipoLogin == "2") {
-        this.menuItems.splice(0, 1)
-        this.menuItems.splice(0, 5)
+        this.menuItems.splice(0, 2)
+        this.menuItems.splice(0, 3)
       }
       this.router.events.subscribe((event) => {
         if (event instanceof NavigationEnd) {
