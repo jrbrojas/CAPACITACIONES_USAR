@@ -29,8 +29,8 @@ export class SidebarComponent implements OnInit {
       tipoLogin = JSON.parse(tipoLogin)
       actualizar = JSON.parse(actualizar)
       if(actualizar){
-        localStorage.setItem("actualizar", JSON.stringify(false)) 
-        location.reload();   
+        localStorage.setItem("actualizar", JSON.stringify(false))
+        location.reload();
       }
       console.log("el tipo de login es", tipoLogin);
 
@@ -39,7 +39,7 @@ export class SidebarComponent implements OnInit {
       }
       if (tipoLogin == "2") {
         this.menuItems.splice(0, 1)
-        this.menuItems.splice(0, 5)
+        this.menuItems.splice(0, 3)
       }
       this.router.events.subscribe((event) => {
         if (event instanceof NavigationEnd) {
