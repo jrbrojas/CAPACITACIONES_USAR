@@ -47,4 +47,8 @@ export class LoginComponent implements OnInit {
 
   hide = true;
 
+  recuperarClave() {
+    this.router.navigate(['/reset-password/:7937nt78t5nc479wymxt407ytc90cw374590387452v903872h3496823c9465c8235689234657938c23465hco3']);
+  }
+
 }
